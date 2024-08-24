@@ -165,6 +165,7 @@ checks:
       - cis_csc: ["4.7"]
     condition: all
     rules:
+      - 'c:net user guest -> r:The user name could not be found.'
       - 'c:net user guest -> r:Account active\s+No'
 
   - id: 15512
